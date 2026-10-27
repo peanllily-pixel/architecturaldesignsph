@@ -1,9 +1,10 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Philippine Architectural Designs</title>
 
   <style>
@@ -19,135 +20,150 @@
 
     body {
       font-family: Arial, sans-serif;
-      background: #f7f3ff;
+      background: #f8f5ff;
       color: #30204f;
       line-height: 1.6;
     }
 
+    /* HEADER */
+
     header {
       background: #49336f;
       color: white;
-      padding: 20px 7%;
+      padding: 22px 7%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 15px;
     }
 
     header h2 {
       font-family: Georgia, serif;
       font-size: 24px;
+      font-weight: normal;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
-      margin-left: 22px;
       font-size: 14px;
     }
 
     nav a:hover {
-      color: #ddcaff;
+      color: #dfccff;
     }
 
+    /* HERO SECTION */
+
     .hero {
-      padding: 95px 9%;
-      background:
-        linear-gradient(90deg, rgba(63, 42, 99, .92),
-        rgba(91, 65, 132, .55)),
-        url("https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1800&q=85")
-        center/cover;
+      padding: 100px 9%;
+      background: linear-gradient(
+        120deg,
+        #49336f,
+        #7655a4,
+        #a68bcf
+      );
       color: white;
     }
 
-    .hero .eyebrow {
-      color: #e2d0ff;
-      text-transform: uppercase;
-      letter-spacing: 3px;
+    .eyebrow {
+      color: #a184ca;
       font-size: 12px;
       font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+
+    .hero .eyebrow {
+      color: #e2d2ff;
     }
 
     .hero h1 {
       font-family: Georgia, serif;
-      font-size: clamp(38px, 6vw, 65px);
-      line-height: 1.12;
-      max-width: 700px;
-      margin: 18px 0;
+      font-size: clamp(38px, 6vw, 66px);
+      line-height: 1.15;
+      max-width: 750px;
+      margin: 20px 0;
+      font-weight: normal;
     }
 
     .hero .intro {
-      max-width: 570px;
-      color: #f0eaff;
-      margin-bottom: 25px;
+      max-width: 580px;
+      color: #f0e8ff;
+      font-size: 16px;
+      margin-bottom: 28px;
     }
 
     .hero a {
       display: inline-block;
-      background: #e3d0ff;
-      color: #382254;
-      padding: 12px 24px;
+      background: #e4d5ff;
+      color: #382252;
+      padding: 12px 25px;
       border-radius: 30px;
       text-decoration: none;
-      font-weight: bold;
       font-size: 14px;
+      font-weight: bold;
     }
 
     .hero a:hover {
       background: white;
     }
 
+    /* COLLECTION SECTION */
+
     .section {
-      padding: 55px 7%;
+      padding: 60px 7%;
     }
 
     .section h2 {
       font-family: Georgia, serif;
-      font-size: 32px;
-      margin-bottom: 8px;
-    }
-
-    .eyebrow {
-      color: #8867b7;
-      font-size: 12px;
-      font-weight: bold;
-      letter-spacing: 2px;
-      text-transform: uppercase;
+      font-size: clamp(26px, 4vw, 34px);
+      font-weight: normal;
+      margin: 8px 0;
     }
 
     .subtitle {
-      color: #76688e;
-      margin-bottom: 25px;
+      color: #79698f;
+      margin-bottom: 30px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 22px;
     }
 
+    /* EMPTY CARDS */
+
     .card {
       background: white;
-      border: 1px solid #e5d9f6;
+      border: 1px solid #e5d9f5;
       border-radius: 10px;
       overflow: hidden;
-      box-shadow: 0 4px 14px rgba(74, 47, 112, .07);
+      box-shadow: 0 4px 14px rgba(74, 47, 112, 0.06);
     }
 
-    .card img {
+    .image-placeholder {
       width: 100%;
       height: 210px;
-      object-fit: cover;
-      display: block;
+      background: #e9e0f7;
+      border-bottom: 1px solid #ded0f1;
     }
 
     .card-content {
       padding: 20px;
+      min-height: 180px;
     }
 
     .tag {
-      color: #8966b8;
+      color: #9374ba;
       font-size: 11px;
       font-weight: bold;
       text-transform: uppercase;
@@ -156,36 +172,52 @@
 
     .card h3 {
       font-family: Georgia, serif;
-      font-size: 21px;
-      margin: 8px 0;
+      font-size: 20px;
+      font-weight: normal;
+      margin: 10px 0;
     }
 
     .card p {
-      color: #70657e;
+      color: #81758f;
       font-size: 14px;
     }
 
     .location {
-      margin-top: 14px;
-      font-size: 12px;
-      color: #8b79a6;
+      margin-top: 16px;
+      font-size: 12px !important;
     }
 
+    /* ABOUT SECTION */
+
     .about {
-      background: #e8ddfa;
+      background: #e9def9;
+    }
+
+    .about h2 {
+      margin-bottom: 15px;
     }
 
     .about p {
-      max-width: 850px;
+      max-width: 800px;
       color: #625474;
     }
+
+    /* FOOTER */
 
     footer {
       background: #49336f;
       color: #eee5ff;
       text-align: center;
-      padding: 24px;
+      padding: 25px 7%;
       font-size: 13px;
+    }
+
+    /* RESPONSIVE DESIGN */
+
+    @media (max-width: 1000px) {
+      .grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
     }
 
     @media (max-width: 600px) {
@@ -194,22 +226,35 @@
       }
 
       header h2 {
-        font-size: 20px;
+        font-size: 21px;
       }
 
-      nav a {
-        margin-left: 0;
-        margin-right: 15px;
+      nav {
+        gap: 18px;
       }
 
-      .hero, .section {
+      .hero {
+        padding: 65px 6%;
+      }
+
+      .section {
         padding: 45px 6%;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .image-placeholder {
+        height: 220px;
       }
     }
   </style>
 </head>
 
 <body>
+
+  <!-- HEADER -->
 
   <header>
     <h2>Philippine Architectural Designs</h2>
@@ -221,112 +266,136 @@
     </nav>
   </header>
 
+  <!-- HERO SECTION -->
+
   <section class="hero" id="home">
-    <p class="eyebrow">A Digital Heritage Collection</p>
+    <p class="eyebrow">A Digital Collection</p>
 
     <h1>Philippine Architectural Designs</h1>
 
     <p class="intro">
       Explore the rich heritage and diverse styles of
       Philippine architecture, from traditional homes
-      to historic landmarks and modern structures.
+      to historical landmarks and contemporary structures.
     </p>
 
     <a href="#collection">Explore the Collection &rarr;</a>
   </section>
 
+  <!-- ARCHITECTURAL COLLECTION -->
+
   <section class="section" id="collection">
+
     <p class="eyebrow">Featured Collection</p>
-    <h2>Notable Philippine Architectural Designs</h2>
+
+    <h2>Philippine Architectural Designs</h2>
 
     <p class="subtitle">
-      Discover iconic buildings and architectural styles
-      that shape the country's identity.
+      A collection of architectural designs from different
+      regions, periods, and traditions across the Philippines.
     </p>
 
     <div class="grid">
 
+      <!-- CARD 1 -->
+
       <article class="card">
-        <img
-          src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=800&q=80"
-          alt="Architectural building">
+        <div class="image-placeholder"></div>
 
         <div class="card-content">
-          <span class="tag">Traditional</span>
-          <h3>Bahay na Bato</h3>
+          <span class="tag">Architectural Style</span>
+          <h3>Building Name</h3>
+
           <p>
-            A traditional house form combining Filipino
-            influences with Spanish colonial construction
-            techniques.
+            Description of the architectural design.
           </p>
-          <p class="location">Philippines</p>
+
+          <p class="location">
+            Location, Philippines
+          </p>
         </div>
       </article>
 
+      <!-- CARD 2 -->
+
       <article class="card">
-        <img
-          src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80"
-          alt="Historic architectural structure">
+        <div class="image-placeholder"></div>
 
         <div class="card-content">
-          <span class="tag">Colonial</span>
-          <h3>Barasoain Church</h3>
+          <span class="tag">Architectural Style</span>
+          <h3>Building Name</h3>
+
           <p>
-            A historic church in Malolos, Bulacan, associated
-            with the First Philippine Republic.
+            Description of the architectural design.
           </p>
-          <p class="location">Malolos, Bulacan</p>
+
+          <p class="location">
+            Location, Philippines
+          </p>
         </div>
       </article>
 
+      <!-- CARD 3 -->
+
       <article class="card">
-        <img
-          src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=800&q=80"
-          alt="Building with Art Deco inspired architecture">
+        <div class="image-placeholder"></div>
 
         <div class="card-content">
-          <span class="tag">Art Deco</span>
-          <h3>Manila Metropolitan Theater</h3>
+          <span class="tag">Architectural Style</span>
+          <h3>Building Name</h3>
+
           <p>
-            A landmark in Manila recognized for its Art Deco
-            design and cultural significance.
+            Description of the architectural design.
           </p>
-          <p class="location">Manila</p>
+
+          <p class="location">
+            Location, Philippines
+          </p>
         </div>
       </article>
 
+      <!-- CARD 4 -->
+
       <article class="card">
-        <img
-          src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=800&q=80"
-          alt="Contemporary architectural design">
+        <div class="image-placeholder"></div>
 
         <div class="card-content">
-          <span class="tag">Contemporary</span>
-          <h3>Modern Filipino Architecture</h3>
+          <span class="tag">Architectural Style</span>
+          <h3>Building Name</h3>
+
           <p>
-            Contemporary structures exploring modern
-            materials, innovative spaces, and local design.
+            Description of the architectural design.
           </p>
-          <p class="location">Philippines</p>
+
+          <p class="location">
+            Location, Philippines
+          </p>
         </div>
       </article>
 
     </div>
   </section>
 
+  <!-- ABOUT SECTION -->
+
   <section class="section about" id="about">
+
     <p class="eyebrow">About the Project</p>
-    <h2>The Beauty of Philippine Architecture</h2>
+
+    <h2>Preserving Philippine Architecture</h2>
 
     <p>
-      This website serves as a digital collection of
-      Philippine architectural designs, showcasing the
-      country's cultural heritage, diverse styles, and
-      historical landmarks. It aims to promote appreciation
-      for the nation's architectural identity and preserve
-      knowledge for future generations.
+      Philippine Architectural Designs is a digital collection
+      dedicated to presenting the architectural heritage
+      of the Philippines. It aims to showcase different
+      architectural styles, building designs, historical
+      structures, and cultural influences that contribute
+      to the country's architectural identity.
     </p>
+
   </section>
+
+  <!-- FOOTER -->
 
   <footer>
     <p>Philippine Architectural Designs | Academic Project</p>
@@ -334,4 +403,3 @@
 
 </body>
 </html>
-```
